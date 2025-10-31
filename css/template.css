@@ -1,0 +1,13 @@
+.editor-templates-con {
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100vh - 6vh);
+    overflow: auto;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.editor-templates-con .template-card {
+    width: 50%;
+    padding: 10px;
+}

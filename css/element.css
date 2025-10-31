@@ -1,0 +1,12 @@
+.frame-content-part .frame-img {
+    width: 45%;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.frame-content-part .frame-img:hover {
+    background-color: #424549;
+}

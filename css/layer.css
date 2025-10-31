@@ -1,0 +1,73 @@
+.layer-content-head .layer-content .sub-layers {
+    width: 82%;
+    margin: 0 0 0 auto;
+    display: none;
+}
+
+.image-editor-con .layer-content-part .layer-content {
+    margin-bottom: 10px;
+}
+
+.image-editor-con .layer-content-part .layer-content .media {
+    border-bottom: 1px solid var(--lineColor);
+}
+
+.image-editor-con .layer-content-part .layer-content .layer-img {
+    width: 44px;
+    height: 42px;
+    background: var(--contentColor);
+    padding: 5px;
+    object-fit: cover;
+}
+
+.image-editor-con .layer-content-part .layer-content .sub-layers .layer-img {
+    width: 35px;
+    height: 32px;
+}
+
+.image-editor-con .layer-content-part .layer-content .media-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7px;
+}
+
+.image-editor-con .layer-content-part .layer-content .name {
+    margin-left: 10px;
+    font-size: 12px;
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 0;
+    width: 69%;
+    background-color: transparent;
+}
+
+.image-editor-con .layer-content-part .layer-content .sub-layers .name {
+    font-size: 11px;
+    font-family: sans-serif;
+}
+
+.image-editor-con .layer-content-part .layer-content .layer-name {
+    font-size: 13px;
+    color: var(--textColor);
+}
+
+
+
+.image-editor-con .layer-content-part .layer-content .media:hover,
+.image-editor-con .layer-content-part .layer-content.active>.media {
+    background: var(--contentColor);
+}
+
+.image-editor-con .layer-content-part .layer-content .visibility-icon {
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--textColor);
+    margin: 0 4px;
+}
+
+.image-editor-con .layer-content-part .layer-content .sub-layers .visibility-icon {
+    font-size: 0.7rem;
+    display: none;
+}

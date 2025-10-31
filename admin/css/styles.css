@@ -1,0 +1,13 @@
+.template-credit-container {
+    display: block;
+}
+
+.template-credit-container .credit-plus-btn {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.template-credit-container .credit-close-btn {
+    font-size: 14px;
+    cursor: pointer;
+}

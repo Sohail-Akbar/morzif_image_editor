@@ -1,0 +1,695 @@
+.checkboxLabel .c-box {
+    width: 12px;
+    height: 12px;
+}
+
+.checkboxLabel {
+    font-size: 12px;
+}
+
+.editor-sidebar {
+    display: flex;
+}
+
+.col-target2 {
+    user-select: none;
+}
+
+.properties-panels {
+    border-left: 2px solid var(--lineColor);
+    border-right: 1px solid var(--borderColor);
+    width: 250px;
+    height: 100vh;
+    z-index: 9;
+    background: var(--bgColor);
+    display: block;
+    overflow: auto;
+    position: relative;
+}
+
+.properties-panels.active {
+    display: block;
+}
+
+.layer-properties-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--bgColor);
+    width: 100%;
+    height: 100%;
+}
+
+.editor-sidebar .option-properties {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image-editor-container .image-editor-con .editor-con-header .canvas-container {
+    background-color: #fff;
+    height: calc(100vh - 89px);
+}
+
+.editor-sidebar .option-properties.active {
+    display: block;
+}
+
+.editor-sidebar .option-properties .prop-content-part {
+    height: calc(100vh - 7vh);
+}
+
+.file-select-header .editor-sidebar .editor-options {
+    width: 4.5rem;
+    height: 100vh;
+    background-color: var(--contentColor);
+    position: relative;
+}
+
+.file-select-header .image-editor-con .editor-sidebar .editor-options {
+    width: 3.5rem;
+}
+
+.image-editor-container .image-editor-con .editor-con-header {
+    width: calc(100% - 0px);
+    height: calc(100vh - 94px);
+    box-sizing: border-box;
+    padding: 47px 50px;
+    overflow: auto;
+}
+
+/* layers */
+.image-editor-con .layer-header .word-heading .heading {
+    color: var(--headingTextColor);
+    font-family: var(--fontFamily);
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.image-editor-con .layer-header .word-heading {
+    background-color: var(--headingColor);
+    text-align: center;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--lineColor);
+}
+
+.image-editor-con .layer-header {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--contentColor);
+}
+
+.image-editor-con .layer-header .plus-icon {
+    height: 60px;
+    border: 1px dashed var(--lineColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--textColor);
+}
+
+.image-editor-con .layer-header .plus-icon i {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.image-editor-con .layer-header .plus-icon:hover i {
+    transform: rotate(180deg) !important;
+    -webkit-transform: rotate(180deg) !important;
+    -moz-transform: rotate(180deg) !important;
+    -ms-transform: rotate(180deg) !important;
+    -o-transform: rotate(180deg) !important;
+}
+
+.file-upload-parent .editor-sidebar .lines-img {
+    height: 5px;
+}
+
+.file-upload-parent .editor-sidebar {
+    height: 100vh;
+}
+
+.file-select-header .drag-text h3 {
+    transform: rotate(-2deg);
+}
+
+.image-editor-con .layer-header .layer-content-parent {
+    width: 100%;
+    height: calc(100% - 35px);
+    background-color: var(--bgColor);
+}
+
+.image-editor-con .layer-header .layer-content-parent .layer-content-head {
+    width: 100%;
+    height: calc(100% - 93px);
+    margin-top: 5px;
+    overflow: auto;
+}
+
+.image-editor-con .layer-header .layer-content-parent .layer-content-head .layer-content {
+    width: 100%;
+    height: 14%;
+    background: url(../images/square-bg.png);
+    background-size: contain;
+    position: relative;
+    margin-top: 6px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.image-editor-con .layer-header .layer-content-parent .layer-content-head .layer-content .objects {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-editor-con .layer-header .layer-content-parent .layer-content-head .layer-content .l-prop {
+    padding: 0px 15px;
+    background: #0007;
+    position: absolute;
+    top: 1px;
+    right: 7px;
+    font-size: 12px;
+}
+
+.image-editor-con .layer-header .layer-content-parent .layer-content-head .layer-content .l-prop2 {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 4px 6px 4px 6px;
+    background: #000000ba;
+    box-sizing: border-box;
+}
+
+.image-editor-con .col-target1 a.nav-link {
+    color: var(--textColor);
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -ms-border-radius: 0px !important;
+    -o-border-radius: 0px !important;
+    border-bottom: 1px solid var(--lineColor);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    padding: 15px 10px !important;
+    cursor: pointer;
+}
+
+.image-editor-con .editor-options li.editor-layer-btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.image-editor-con .col-target1 a.nav-link:hover {
+    background-color: var(--hoverColor);
+    color: var(--hoverItemColor);
+}
+
+.image-editor-con .col-target1 a.nav-link:hover svg {
+    fill: var(--hoverItemColor) !important;
+}
+
+.option-properties .text-content-header {
+    width: 100%;
+    padding: 13px 15px 0 15px;
+}
+
+.option-properties .text-content-header .f-11 {
+    font-size: 11px;
+    color: var(--whiteColor);
+}
+
+.custom-selectbox {
+    background-color: var(--contentBgColor) !important;
+    color: var(--whiteColor) !important;
+    border: 1px solid var(--boderClr) !important;
+}
+
+.color-picker {
+    display: block;
+    width: 100%;
+    height: 32px;
+    border: var(--boderClr);
+    background-color: var(--bgClr);
+}
+
+.drawing-icon {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.layer-opacity-part .layer-opacity {
+    justify-content: space-between;
+}
+
+.layer-lock-btn button,
+.layer-visibility-btn button {
+    background-color: var(--bgColor);
+    color: var(--textColor);
+    width: 40% !important;
+    text-align: center;
+}
+
+.layer-lock-btn .active {
+    background-color: #007bff;
+}
+
+.layer-visibility-btn .active {
+    background-color: #007bff;
+}
+
+.layer-lock-btn,
+.layer-visibility-btn {
+    justify-content: space-between;
+}
+
+.layer-setting-icon {
+    justify-content: space-evenly;
+}
+
+#add-layer-modal .modal-content {
+    background-color: var(--bgColor);
+    padding-bottom: 10px;
+}
+
+#add-layer-modal .add-layer-modal-label {
+    text-align: center;
+}
+
+#add-layer-type {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#add-layer-type div {
+    display: flex;
+    flex-direction: column;
+    padding: 18px 25px;
+    background-color: #595b5e14;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-layer-type div:hover {
+    background-color: #595b5e3b;
+}
+
+#add-layer-type div span {
+    margin-top: 3px;
+    text-align: center;
+}
+
+.image-layer .add-image-layer-label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.close-layer-dropdown {
+    top: 0px;
+    right: 5px;
+}
+
+.layer-heading-icon {
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+}
+
+.editor-options .sidebar-setting-icon {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #86898f29;
+    text-align: center;
+}
+
+.editor-options .sidebar-setting-icon:hover i {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.editor-options .sidebar-setting-icon i {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.dropup .dropdown-toggle::after {
+    display: none !important;
+}
+
+.sidebar-setting-icon .dropdown-menu {
+    width: 300px;
+    padding: 10px;
+}
+
+.image-editor-con .col-target2 .editor-content-footer {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: var(--bgColor);
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #fff1;
+}
+
+.image-editor-con .col-target2 .editor-content-footer .right-items {
+    display: flex;
+}
+
+.image-editor-con .col-target2 .editor-content-footer .zoom-header {
+    color: var(--textColor);
+    display: flex;
+    align-items: center;
+    background: var(--bgColor);
+}
+
+.image-editor-con .col-target2 .editor-content-footer .zoom-header .zoom-val {
+    width: 55px;
+    background: transparent;
+    border: none;
+    color: var(--textColor);
+}
+
+
+.col-target2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #region Canvas lines */
+.canvas-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #007bff;
+    display: none;
+}
+
+.canvas-line-y {
+    width: 100%;
+    height: 2px;
+}
+
+.canvas-editor-con {
+    position: relative;
+}
+
+/* #endregion Canvas lines */
+.clr-picker-con-2 {
+    display: flex;
+    align-items: center;
+}
+
+.clr-picker-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    padding: 5px;
+    background: #444;
+    cursor: pointer;
+    border: 1px solid var(--boderClr);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    pointer-events: all;
+}
+
+.clr-picker-icon img {
+    width: 100%;
+}
+
+button#clr-color-preview {
+    background: transparent;
+    color: transparent;
+    pointer-events: none;
+}
+
+button#clr-color-preview::after,
+button#clr-color-preview::before {
+    content: none;
+}
+
+.canvas-editor-con .canvas-upper-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* cursor: url('../images/editor-icon/color-picker-cursor.svg'), auto; */
+    cursor: none;
+}
+
+.canvas-upper-div .content {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    pointer-events: none;
+}
+
+.canvas-upper-div .color-picker-cursor {
+    position: absolute;
+    display: none;
+}
+
+.canvas-upper-div .color-picker-cursor img.picker-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.canvas-upper-div .color-picker-cursor .color-box {
+    width: 50px;
+    height: 50px;
+    background: var(--cursor-color);
+    display: inline-block;
+    border: 1px solid var(--boderClr);
+    box-shadow: 0 0px 10px #0003;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+/* #region Color picker */
+.asColorPicker-preview {
+    display: none;
+}
+
+
+ul.asColorPicker-palettes {
+    display: none;
+}
+
+div#asColorPicker-dropdown {
+    background: #444;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 5%), 0 5px 20px rgb(0 0 0 / 10%);
+    border: none;
+    --currentColor: transparent;
+}
+
+input.asColorPicker-hex {
+    background: transparent;
+    border: 1px solid var(--boderClr);
+    color: var(--textColor);
+    padding: 2px 5px;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.asColorPicker-hue,
+.asColorPicker-alpha {
+    width: 10px;
+}
+
+.asColorPicker-hue i,
+.asColorPicker-alpha i {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 1px #888;
+    left: -2px;
+    margin-top: -2px;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+
+.asColorPicker-saturation i {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: var(--currentColor);
+    cursor: pointer;
+}
+
+.asColorPicker-clear {
+    display: none !important;
+}
+
+.asColorPicker-wrap {
+    display: block;
+    width: 100%;
+    border: 4px solid var(--boderClr);
+    height: 28px;
+    border-radius: 2px;
+}
+
+.asColorPicker-trigger {
+    height: 100%;
+    width: 100%;
+    display: block;
+    border: none;
+}
+
+.asColorPicker-buttons,
+.asColorPicker-gradient-control {
+    float: none;
+    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.asColorPicker-buttons a,
+.asColorPicker-gradient-control a {
+    color: var(--textColor);
+    font-size: 14px;
+}
+
+a.asColorPicker-gradient-switch {
+    background-color: var(--blueColor);
+    padding: 2px 5px;
+}
+
+a.asColorPicker-gradient-cancel {
+    display: none;
+}
+
+.asColorPicker-gradient {
+    border-top: 1px solid var(--boderClr);
+}
+
+.asColorPicker-gradient_enable {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.asColorPicker-gradient-preview {
+    width: 100%;
+    float: none;
+    clear: both;
+}
+
+.asColorPicker-gradient-wheel {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.asColorPicker-gradient-wheel i {
+    transform: scale(2.5);
+    -webkit-transform: scale(2.5);
+    -moz-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+}
+
+.asColorPicker-gradient-angle {
+    width: auto;
+    background: transparent;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: var(--textColor);
+    border: none;
+    border-bottom: 1px solid var(--boderClr);
+}
+
+.asColorPicker-gradient-markers {
+    width: 100%;
+}
+
+.asColorPicker-gradient-marker {
+    height: 30px;
+    top: 10px;
+    width: 10px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    cursor: move;
+}
+
+.asColorPicker-gradient-marker i {
+    display: none;
+}
+
+ul.asColorPicker-gradient-markers {
+    outline: none;
+}
+
+.asColorPicker-gradient-marker_active {
+    outline: 3px solid #767676;
+}
+
+.asColorPicker-mask {
+    pointer-events: none;
+}
+
+/* #endregion Color picker */
+
+.file-upload-header .image-upload-wrap.drop-image {
+    box-shadow: 0 0 10px #9e9e9e;
+}

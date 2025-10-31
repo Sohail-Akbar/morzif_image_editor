@@ -1,0 +1,36 @@
+.drawing-modes {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    border: none !important;
+}
+
+.background-image {
+    background-image: url(../images/brush-background.jpg);
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.drawing-content {
+    padding-left: 8px !important;
+}
+
+.shape-one,
+.shape-two {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#shape-fill-heading span,
+#shape-outline-heading span {
+    font-size: 13px;
+    font-family: sans-serif;
+    color: var(--textColor);
+}
+
+.draw-content-part {
+    height: calc(100vh - 59px);
+}

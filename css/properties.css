@@ -1,0 +1,261 @@
+.obj-props-panel {
+    position: fixed;
+    top: 41px;
+    right: 0;
+    width: 250px;
+    background-color: var(--bgColor);
+    border-left: 1px solid var(--lineColor);
+    height: calc(100vh - 89px);
+    overflow: hidden;
+    z-index: 50;
+    display: none;
+}
+
+.obj-props-panel.active {
+    display: block;
+}
+
+.obj-props-panel .card {
+    box-shadow: none;
+}
+
+.properties-con .specific-prop {
+    display: none !important;
+}
+
+.properties-con .specific-prop.active {
+    display: block !important;
+}
+
+.add-text-head .add-text-head .tc-select {
+    width: 100%;
+    background: var(--contentBgColor);
+}
+
+.add-text-head .add-text-head .tc-select-head {
+    padding: 12px 10px;
+}
+
+.add-text-head .add-text-head .tc-select .tc-select-body {
+    transform: translate3d(0px, 38px, 0px) !important;
+}
+
+.editing-panel-css .rotate-con .rotate-deg:focus {
+    border: 1px solid #ffffff5c;
+}
+
+.editing-panel-css .add-text-head #textarea {
+    border: 1px solid var(--lineColor);
+    min-height: 80px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: var(--textColor);
+    width: inherit;
+}
+
+.editing-panel-css .add-text-head #textarea:focus {
+    border: 1px solid var(--lineColor) !important;
+}
+
+.editing-panel-css .rotate-con .rotate-deg {
+    width: 30%;
+    border: none;
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--textColor);
+}
+
+
+.editing-panel-css .card-header {
+    background-color: var(--contentBgColor);
+}
+
+.editing-panel-css .card-header:hover {
+    background-color: var(--contentBgColorH);
+}
+
+.editing-panel-css .card {
+    background-color: transparent;
+}
+
+.editing-panel-css .card-header .heading {
+    font-size: 13px;
+    font-family: sans-serif;
+    color: var(--whiteColor);
+}
+
+.cn-obj-props-changer[type="checkbox"],
+.cn-obj-props-changer[type="radio"] {
+    display: none;
+}
+
+.cn-obj-props-changer[type="checkbox"]:checked+*,
+.cn-obj-props-changer[type="radio"]:checked+* {
+    background-color: var(--bgColor);
+    border: 1px solid var(--lineColor);
+}
+
+/* #region Color inputs */
+.clr-dark .clr-segmented label {
+    margin-bottom: 0;
+}
+
+.clr-swatches button {
+    width: 25px;
+    height: 25px;
+}
+
+.clr-field button,
+.clr-field button {
+    left: 0px;
+    right: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+.clr-field {
+    display: block;
+    width: 100%;
+    border: 4px solid var(--lineColor);
+    height: 28px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+input.tc-color-picker {
+    opacity: 0;
+    width: 100%;
+    cursor: default;
+}
+
+.cn-nav-item .shape-fill-container .clr-field {
+    margin-left: -7px;
+    box-shadow: -2px 0 10px #0002;
+}
+
+
+.clr-filed-corner .clr-field button {
+    background: currentColor;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    border-radius: 50%;
+}
+
+.clr-filed-corner .clr-field button::after {
+    content: none;
+}
+
+.clr-filed-corner .clr-field {
+    background: url('../images/transparent.png') !important;
+    overflow: visible !important;
+}
+
+/* #endregion Color inputs */
+
+/* shape colors start */
+.shape-fill-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.shape-fill-container .clr-field {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin: 0 4px 8px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 7px;
+}
+
+.clr-filed-corner.large-circle .clr-field {
+    display: inline-block;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.clr-filed-corner.small-circle .clr-field {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+/* shape colors End */
+
+/* small circle clr start */
+.cn-small-circle {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 3px;
+    position: relative;
+    text-align: center;
+}
+
+.cn-small-circle i {
+    opacity: 0;
+}
+
+.cn-small-circle i.active {
+    opacity: 1;
+}
+
+.cn-small-circle-con .clr-field {
+    height: 100%;
+}
+
+.cn-small-circle-con .clr-field-con {
+    height: 0px;
+    opacity: 0;
+}
+
+
+/* small circle clr End */
+
+.add-text-head .cn-text-font-con {
+    width: 100%;
+    height: 100%;
+}
+
+.add-text-head .cn-text-font-con input.font-small-inp {
+    width: 100%;
+    height: 100%;
+    background-color: var(--contentBgColor);
+    color: var(--textColor);
+    border: none;
+    padding: 0 5px;
+}
+
+.add-text-head .cn-text-font-con.small-con {
+    height: 85%;
+}
+
+.add-text-head .style-name {
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    margin-top: 6px;
+    color: var(--textColor);
+}

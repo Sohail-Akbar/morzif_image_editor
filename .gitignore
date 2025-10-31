@@ -1,0 +1,28 @@
+composer.phar
+/vendor/
+
+# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
+
+# images
+/images/users/*
+/images/editor-image/*
+!/images/users/avatar.png
+/images/shapes/*
+
+# js test
+/js/t
+
+
+# env file
+/includes/inc/env.php
+
+# temp folder
+/extensions/temp/
+/extensions/temp/*
+
+# css and js files
+/js/source/
+/css/source/
+/source/

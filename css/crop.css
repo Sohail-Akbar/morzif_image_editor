@@ -1,0 +1,97 @@
+.editor-sidebar .option-properties .rotate-prop-head .crop-content-part .size-parent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.editor-sidebar .option-properties .rotate-prop-head .crop-content-part .size-parent p {
+    color: var(--textColor);
+}
+
+.straighten-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.flip-parent {
+    color: var(--textColor);
+    background: #333;
+    cursor: pointer;
+}
+
+.editor-sidebar .option-properties .card-header {
+    background-color: var(--contentBgColor);
+}
+
+#ratio-heading-one span {
+    font-size: 13px;
+    font-family: sans-serif;
+    color: var(--textColor);
+}
+
+#aspect-collapse-one .aspect-tab {
+    width: 50%;
+    padding: 5px 0 5px 0;
+    color: var(--textColor);
+    text-align: center;
+    transition: all .15s linear;
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    -ms-transition: all .15s linear;
+    -o-transition: all .15s linear;
+}
+
+#aspect-collapse-one .tab-one {
+    border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    -ms-border-radius: 4px 0 0 4px;
+    -o-border-radius: 4px 0 0 4px;
+}
+
+#aspect-collapse-one .tab-two {
+    border-radius: 0 4px 4px 0;
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    -ms-border-radius: 0 4px 4px 0;
+    -o-border-radius: 0 4px 4px 0;
+}
+
+#aspect-collapse-one .aspect-tab.active {
+    background-color: var(--blueColor);
+}
+
+#aspect-collapse-one #headingOne {
+    background-color: var(--bgClr);
+    border-bottom: none !important;
+}
+
+#aspect-collapse-one .label {
+    margin-bottom: 0% !important;
+}
+
+.ratio-part .ratio-parent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.aspect-size-part .aspect-size-parent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.flipY-icon {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    padding: 15px 10px !important;
+}
+
+.rotate-prop-head {
+    height: calc(100vh - 10px);
+}

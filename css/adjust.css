@@ -1,0 +1,41 @@
+.adjust-content-part .basic-filter-part {
+    justify-content: space-evenly;
+}
+
+.adjust-content-part .basic-filter-part div {
+    display: flex;
+    flex-direction: column;
+    padding: 6px 6px;
+    background-color: var(--bgColor2);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.adjust-content-part .basic-filter-part div span {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 2px;
+}
+
+#adjust-color-heading span,
+#adjust-light-heading span,
+#adjust-details-heading span,
+#adjust-scene-heading span,
+#adjust-tone-heading span,
+#adjust-fill-heading span {
+    font-size: 13px;
+    font-family: sans-serif;
+    color: var(--textColor);
+}
+
+.adjust-reset-part .adjust-reset-btn {
+    width: 90%;
+    background: transparent;
+    color: var(--textColor);
+    border: 1px solid var(--textColor);
+    margin-left: 5%;
+    padding: 3px;
+}

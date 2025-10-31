@@ -1,0 +1,119 @@
+.rectangle {
+    width: 30%;
+    border: 1px solid rgb(182, 177, 177);
+    height: 27px;
+    background-color: #454749;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.shapes-intro {
+    background-color: #2d2f34;
+    width: 100%;
+    padding: 3px 5px;
+}
+
+.icon-and-text {
+    justify-content: start;
+}
+
+.delete-icon {
+    justify-content: end;
+}
+
+.width-and-xpos,
+.height-and-hpos {
+    justify-content: space-evenly;
+}
+
+#shape-heading {
+    background-color: var(--contentBgColor);
+    border-bottom: none !important;
+}
+
+
+.shape-type-part .shapes-icon {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.shapes-icon .shape-clip div div {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+}
+
+.shapes-icon .shape-clip .ovel-parent .ovel {
+    clip-path: ellipse(50% 27% at 50% 50%);
+}
+
+.shapes-icon .shape-clip .octagon-parent .octagon {
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.shapes-icon .shape-clip .pantagon-parent .pantagon {
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.shapes-icon .shape-clip .triangle-parent .triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.shapes-icon .shape-clip .triangle-parent .triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.shapes-icon .shape-clip,
+.shapes-icon .shape-icon {
+    justify-content: space-evenly;
+}
+
+#outlineheading span,
+#shadowheading span,
+#shape-heading span {
+    font-size: 13px;
+    font-family: sans-serif;
+    color: var(--textColor);
+}
+
+.shadow-blur,
+.shadow-distance,
+.shadow-direction,
+.shadow-opacity,
+.outline-size-part .outline-size,
+.shape-rotate-text {
+    justify-content: space-between;
+}
+
+.cn-load-more-shape-con .cn-load-more-btn {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--contentBgColor);
+    border: 1px solid var(--lineColor);
+    color: var(--textColor);
+    padding: 7px 40px;
+    border-radius: 0px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.cn-load-more-shape-con .cn-load-more-btn svg {
+    width: 10px !important;
+}
+
+.all-shapes-content .is-free-drawing-shape-con {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    text-align: center;
+    align-items: center;
+}
+
+.all-shapes-content .is-free-drawing-shape-con .switch {
+    transform: scale(0.6);
+}
